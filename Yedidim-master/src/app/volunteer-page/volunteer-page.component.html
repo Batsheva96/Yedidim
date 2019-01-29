@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+  <div class="container">
+    
+
+      <div class="header">
+          
+            <h1 class=title> פרסום קריאות</h1>
+            
+            <div class="responsive">
+              <img src="{{ picture}}" class="photos" />
+            </div>
+            
+         
+              
+            </div>
+           
+            
+               <button   (click)="logOut()" class="out" >  יציאה</button>
+                <button (click)="edit_profile()" class="edit">     <i class="fa fa-edit"></i>  ערוך  </button>
+              
+               
+            
+            
+            <br>
+          
+          
+                
+        <div *ngFor='let message of messageService.messageArray'   class="message" > 
+        <div class="date"><b>{{message.date}}</b></div>
+        <b><div class="titlered">קריאה לעזרה</div></b> 
+        
+        <div class="de"> <b> שם פרטי: </b> {{message.name}}</div>
+        <div class="de"><b>שם משפחה: </b>{{message.lastname}}</div>
+        <div class="de"> <b>פלאפון: </b>{{message.phone}} </div>
+        <div class="de"><b> קטגוריה:</b> {{message.category}}</div>
+        <div class="de"><b> עיר :</b>{{message.city}}</div>
+        <div class="de"><b>  כתובת: </b>{{message.address}}</div>
+        <div class="de"><b>  פרטים :</b>{{message.details}}</div>
+        <button class="yl" (click)=confirm(message.name,message.lastname,message.phone,message.category,message.city,message.address,message.details,message.id)> <img src="assets/happy.png">   יוצא לארוע </button>
+        </div>
+            
+      
+    
+  </div>
+  

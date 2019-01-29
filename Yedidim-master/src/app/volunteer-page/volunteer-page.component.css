@@ -1,0 +1,130 @@
+.header
+{
+    
+    width: 100%;
+    
+    padding:17px;
+    top:0%;
+    background-color: rgb(131, 88, 172);
+    
+}
+.title
+{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+    text-align: center;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: end;
+    font-size: medium;
+}
+.message
+{
+    
+    border: 1.5px solid rgb(69, 19, 99);
+    border-radius: 4px;
+    margin-top:6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+}
+.date
+{
+    top:0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 80%;
+   left: 25%;
+    width: 60%;
+
+}
+.edit
+{
+    width: 85px;
+    height: 28px;
+    background: rgb(131, 88, 172);
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(131, 88, 172);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Arial;
+    margin-right: 120%;
+    margin-top: 1.5%;
+
+
+}
+.titlered
+{
+    color: red;
+    text-align: center;
+
+}
+.date{
+    margin-left: -23%;
+}
+.photos
+{
+    width: 35%;
+    height: 35%;
+    margin-left: 165%;
+    margin-top: 5%;
+    border-radius:50px;
+  
+
+}
+.yl
+{
+    width: 35%;
+    height: 28px;
+    background: red;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(131, 88, 172);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Arial;
+    outline: none;
+    cursor: pointer;
+    margin-right: 33%;
+    margin-top: -3%;
+    margin-block-end: 1%;
+
+}
+
+.responsive {
+    
+      float: right;
+      width: 40%;
+      top:5%;
+      position: absolute;
+      
+      
+  }
+  .out
+  { 
+    width: 85px;
+    height: 28px;
+    background: rgb(131, 88, 172);
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(131, 88, 172);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Arial;
+    margin-top: 1%;
+    margin-right: 120%;
+   
+  }

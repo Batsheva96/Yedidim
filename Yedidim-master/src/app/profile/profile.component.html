@@ -1,0 +1,129 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container">
+
+  <div class="header">
+      <h1 class=title>הצטרפות לארגון</h1>
+  </div> 
+  
+
+  <label for="fname">פרטים אישיים</label>
+  <input type="text" [(ngModel)]="firstname" placeholder="שם פרטי" name="firstname" >
+  <div id="firstname" style="color:red; display:none">
+    The first name is required.
+  </div>
+  <input type="text" [(ngModel)]="lastname"  placeholder="שם משפחה" name="lastname" >
+  <div id="lastname" style="color:red; display:none">
+    The last name is required.
+  </div>
+  <input type="tel" [(ngModel)]="phone"  placeholder="מס' פלאפון" name="phone" >
+  <div id="phone" style="color:red; display:none">
+    The phone number is required.
+  </div>
+
+  <label for="city">עיר מגורים</label>
+  
+    <select id="city1" (change)='city = $event.target.value'  >
+    <option *ngFor="let p of types" [value]="p.value" >{{p.valueToShow}}</option>  
+    </select>
+    <div id="city" style="color:red; display:none">
+      The city is required.
+    </div>
+  <label >סיווג מקצועי </label>
+  <br><br>
+  <label > .לצורך שיפור מענה הקריאות, אנא בחר את תחומי הסיוע מהם הנך מעוניין לקבל קריאות </label>
+  <br>
+  <label > . קריאות בתחומים שונים מהמוזכרים להלן-ישלחו לכל המתנדבים </label>
+<br>
+ 
+       
+  <div class="responsive">
+    <div class="gallery"   >
+      <a target="_blank" (click)="sendCtegory('הבאת דלק')">
+        <img src="assets/delek.png"  id="a" (click)="a()" alt="Trolltunga Norway" width="300" height="200">
+      </a>
+      <div class="desc">הבאת דלק</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" (click)="sendCtegory('אחר')">
+          <img src="assets/else.png"  id="h" (click)="h()" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">אחר</div>
+      </div>
+    </div>
+ 
+ 
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" (click)="sendCtegory('החלפת גלגל')">
+        <img src="assets/glgll.png"  id="b" (click)="b()" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">החלפת גלגל</div>
+    </div>
+  </div>
+   
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" (click)="sendCtegory('חילוץ וחיפוש נעדרים')">
+        <img src="assets/kol.png" id="c" (click)="c()"  alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">חילוץ וחיפוש נעדרים</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank"  (click)="sendCtegory('רכב')">
+        <img src="assets/car.png" id="d" (click)="d()"  alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">סיוע כללי לרכב</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" (click)="sendCtegory('פריצת מנעולים')">
+        <img src="assets/door.png"  id="e" (click)="e()" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">פריצת מנעולים</div>
+    </div>
+  </div>
+
+    
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank"(click)="sendCtegory('מילוי אויר לגלגלי רכב')">
+        <img src="assets/avir.png" id="f" (click)="f()"  alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">מילוי אויר  לגלגלים </div>
+    </div>
+  </div>
+
+   
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" (click)="sendCtegory('כבלים לרכב')">
+        <img src="assets/cabel.png" id="g" (click)="g()"  alt="Forest" width="600" height="400 ">
+      </a>
+      <div class="desc"> כבלים לרכב  </div>
+    </div>
+  </div>
+
+        
+      <div class="clearfix"></div>
+      <div id="category" style="color:red; display:none">
+        The category is required.
+      </div>
+
+      <br> 
+       <button (click)="btnSubmit()" class="btnSubmit">הצטרפות לארגון </button>
+       
+     
+      
+    </div>
