@@ -44,13 +44,13 @@ export class FirstPageComponent implements OnInit {
   }
   new_volun(): void {
     this.firebaseService.login().then(user => {
-      if(!user){
+      if (!user) {
 
-      
-      this.router.navigate(["profile"]);
+
+        this.router.navigate(["profile"]);
       }
       else
-      this.router.navigate(["volunteer-page"]);
+        this.router.navigate(["volunteer-page"]);
     })
   }
 

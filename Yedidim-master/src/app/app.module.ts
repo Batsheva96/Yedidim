@@ -12,19 +12,21 @@ import { GuardGuard } from "./guard.guard";
 
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireModule } from 'angularfire2';
-import {AngularFirestoreModule } from "angularfire2/firestore";
-import {FirebaseService} from './service/firebase/firebase.service' ; 
-import{MessageService}from './message.service';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {NoopAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { AngularFirestoreModule } from "angularfire2/firestore";
+import { FirebaseService } from './service/firebase/firebase.service';
+import { MessageService } from './message.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VolunteerPageComponent } from './volunteer-page/volunteer-page.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { MainComponent } from './main/main.component';
 import { OkComponent } from './ok/ok.component';
 import { ConfirmationPageComponent } from './confirmation-page/confirmation-page.component';
-import {ReturnMessageService}  from './return-message.service'
+import { ReturnMessageService } from './return-message.service'
+import { LocationService } from './common/services/location/location.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 export const environment = {
@@ -50,8 +52,8 @@ export const environment = {
     MainComponent,
     OkComponent,
     ConfirmationPageComponent,
-   
-   
+
+
   ],
   imports: [
     BrowserModule,
@@ -62,19 +64,21 @@ export const environment = {
     BrowserAnimationsModule,
     NoopAnimationsModule,
     MatButtonModule,
-     MatCheckboxModule,
-     FormsModule, 
-     ReactiveFormsModule,
-     
+    MatCheckboxModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
 
-   
+
   ],
   providers: [
     GuardGuard,
     AuthService,
     FirebaseService,
     MessageService,
-    ReturnMessageService
+    ReturnMessageService,
+    LocationService,
+
   ],
   bootstrap: [AppComponent]
 })

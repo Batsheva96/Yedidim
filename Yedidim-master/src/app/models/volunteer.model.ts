@@ -1,8 +1,8 @@
-export class Volunteer{
+export class Volunteer {
 
-    name:string;
+    name: string;
     lastname: string;
-    phone:string;
+    phone: string;
     city: string;
     lat: number;
     lng: number;
@@ -10,27 +10,25 @@ export class Volunteer{
 
     firstLogin: boolean = false;
 
-    constructor(volunteer?:Volunteer)
-    {
-        if(volunteer)
-        {
-            this.name= volunteer.name;
-            this.lastname=volunteer.lastname;
-            this.phone=volunteer.phone;
+    constructor(volunteer?: Volunteer) {
+        if (volunteer) {
+            this.name = volunteer.name;
+            this.lastname = volunteer.lastname;
+            this.phone = volunteer.phone;
             this.lat = this.position.coords.latitude;
             this.lng = this.position.coords.longitude;
 
         }
-        else{
-            this.name= "";
-            this.lastname="";
-            this.phone="";
+        else {
+            this.name = "";
+            this.lastname = "";
+            this.phone = "";
             this.lat = 0;
             this.lng = 0;
 
         }
 
-        
+
 
 
     }
