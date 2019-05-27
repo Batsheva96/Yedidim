@@ -20,7 +20,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'request', component: RequestHelpComponent },
   { path: 'edit-profile', component: EditProfileComponent },
-  { path: 'confirmation-page', component: ConfirmationPageComponent }
+  { path: 'confirmation-page', component: ConfirmationPageComponent },
+  { path: '**', redirectTo: 'main'}
 
 
 ];

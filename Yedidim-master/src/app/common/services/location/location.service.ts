@@ -21,11 +21,12 @@ export class LocationService {
   }
 
   public sendMyLocationInterval() {
-    setTimeout(() => {
-      this.sendMyLocation().then(res => {
+    this.sendMyLocation().then(res => {
+      setTimeout(() => {
         this.sendMyLocationInterval();
-      });
-    }, 1000 * 60 * 5);
+      }, 1000 * 60 * 3);
+      
+    });
   }
 
   async sendMyLocation() {
@@ -35,7 +36,8 @@ export class LocationService {
       lat: pos.coords.latitude,
       lng: pos.coords.longitude,
       ts: Date.now(),
-      email: this.firebaseService.getEmail()
+      email: this.firebaseService.getEmail(),
+      type: this.firebaseService.getUserCategory()
     } as LocationModel;
     // const res = await this.col.add(loc);
     const res = await this.afsDocument.doc(LOCATION_COLLECTION + '/' + this.firebaseService.getEmail()).set(loc);

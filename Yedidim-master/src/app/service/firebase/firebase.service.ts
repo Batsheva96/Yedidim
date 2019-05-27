@@ -84,6 +84,9 @@ export class FirebaseService {
 
   }
 
+  public getUserCategory(){
+    return this._profile ? this._profile.helpCategory : []
+  }
 
 
   updateProfile(obj) {

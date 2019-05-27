@@ -43,7 +43,11 @@ app.post('/', (req, res) => {
                     location: l,
                     disnt: distance(l, reqLocation)
                 }
-            }).filter(item => item.disnt < count * 10);
+            }).filter(item => 
+                item.disnt < count * 10 && 
+                item.location.type && 
+                item.location.type.includes(requestHelpData['category']));
+
             locToReturn.forEach(item => {
                 sendEmail(item.location.email, item.disnt, requestHelpData);
             });
@@ -165,5 +169,6 @@ interface ILocation {
     lat: number,
     lng: number,
     ts: number,
-    email: string
+    email: string,
+    type: string[]
 }
