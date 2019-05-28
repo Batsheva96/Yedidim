@@ -32,3 +32,40 @@
 [info] i  Your code has been provided a "firebase-admin" instance.
 [info] i  functions: HTTP trigger initialized at http://localhost:5000/yedidim-project/us-central1/getTimestamp
 [info] i  functions: HTTP trigger initialized at http://localhost:5000/yedidim-project/us-central1/publishLocation-publishLocation
+[debug] [2019-05-28T18:45:42.043Z] Accepted request POST /yedidim-project/us-central1/publishLocation-publishLocation --> publishLocation-publishLocation
+[debug] [2019-05-28T18:45:44.739Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "publishLocation-publishLocation"
+[debug] [2019-05-28T18:45:44.745Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-05-28T18:45:48.311Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[debug] [2019-05-28T18:45:49.182Z] Trigger "publishLocation-publishLocation" has been found, beginning invocation!
+[debug] [2019-05-28T18:45:49.182Z] 
+[debug] [2019-05-28T18:45:49.182Z] Running publishLocation-publishLocation in mode HTTPS
+[debug] [2019-05-28T18:45:49.201Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\batshevx\\Desktop\\Yedidim\\Yedidim-master\\functions\\1156"}
+[debug] [2019-05-28T18:45:49.226Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\batshevx\\Desktop\\Yedidim\\Yedidim-master\\functions\\1156"}
+[debug] [2019-05-28T18:45:49.317Z] Ephemeral server used!
+[info] >  method:  POST
+[info] >  body: %o [object Object]
+[info] >  1
+[debug] [2019-05-28T18:45:51.288Z] Ephemeral server survived.
+[info] >  locations: [ { email: 'eran.hadd@gmail.com',
+[info] >      lat: 31.799774799999998,
+[info] >      lng: 35.21085,
+[info] >      ts: 1558022534063 },
+[info] >    { email: 'batshevaamar96@gmail.com',
+[info] >      lat: 31.803486200000002,
+[info] >      type: [ 'הבאת דלק', 'אחר' ],
+[info] >      lng: 35.208924599999996,
+[info] >      ts: 1559030182790 },
+[info] >    { email: 'eranm22@gmail.com',
+[info] >      lat: 31.4568078,
+[info] >      type: [ 'הבאת דלק' ],
+[info] >      lng: 34.6271399,
+[info] >      ts: 1558990970860 } ]
+[info] i  functions: Finished "publishLocation-publishLocation" in ~2s
+[debug] [2019-05-28T18:53:03.236Z] File C:\Users\batshevx\Desktop\Yedidim\Yedidim-master\functions\package.json changed, reloading triggers
+[debug] [2019-05-28T18:53:03.288Z] File C:\Users\batshevx\Desktop\Yedidim\Yedidim-master\functions\package.json changed, reloading triggers
+[debug] [2019-05-28T18:53:06.997Z] Functions runtime initialized.
+[debug] [2019-05-28T18:53:06.999Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions-test" to be installed as a development dependency. To fix this, run "npm install --save-dev firebase-functions-test" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
