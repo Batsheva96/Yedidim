@@ -32,7 +32,7 @@
 [info] i  Your code has been provided a "firebase-admin" instance.
 [info] i  functions: HTTP trigger initialized at http://localhost:5000/yedidim-project/us-central1/getTimestamp
 [info] i  functions: HTTP trigger initialized at http://localhost:5000/yedidim-project/us-central1/publishLocation-publishLocation
-[debug] [2019-05-28T18:45:42.043Z] Accepted request POST /yedidim-project/us-central1/publishLocation-publishLocation --> publishLocation-publishLocation
+c[debug] [2019-05-28T18:45:42.043Z] Accepted request POST /yedidim-project/us-central1/publishLocation-publishLocation --> publishLocation-publishLocation
 [debug] [2019-05-28T18:45:44.739Z] Functions runtime initialized.
 [info] i  functions: Beginning execution of "publishLocation-publishLocation"
 [debug] [2019-05-28T18:45:44.745Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
